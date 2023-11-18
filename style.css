@@ -1,0 +1,31 @@
+/* Default styles /
+div {
+display: inline-block;
+box-sizing: border-box; / Include padding and border in the element's total width and height /
+width: 100%; / Initial width /
+padding: 10px; / Add padding for spacing */
+}
+
+img {
+max-width: 100%; /* Ensure images don't exceed container width /
+height: auto; / Maintain the aspect ratio of images */
+}
+
+/* Media Query for Tablet View (772px) /
+@media screen and (min-width: 772px) {
+div {
+width: 45%; / 45% of the viewport width /
+max-width: calc(45% - 20px); / Adjust max-width to account for padding */
+}
+
+img {
+max-height: 30vh; /* 30% of the viewport height /
+}
+}
+/ Media Query for Large Screen View (998px) /
+@media screen and (min-width: 998px) {
+div {
+width: 30%; / 30% of the viewport width /
+max-width: calc(30% - 20px); / Adjust max-width to account for padding */
+}
+}
